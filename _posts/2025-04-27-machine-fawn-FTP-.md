@@ -6,6 +6,7 @@ categories: FTP
 ---
 
 I recently completed the very easy 'Fawn' exercise and learned an important point about FTP security vulnerabilities:
+
 • FTP is designed to operate on port 21 and, by default, does not use encryption.
 
 • The default username is often programmed as 'anonymous', allowing users to log in without needing proper credentials.
