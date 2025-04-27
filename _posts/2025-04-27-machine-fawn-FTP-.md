@@ -3,6 +3,7 @@ layout: post
 title: "FTP Vulnerabilities"
 date: 2025-04-27
 categories: FTP
+---
 
 I recently completed the very easy 'Fawn' exercise and learned an important point about FTP security vulnerabilities:
 • FTP is designed to operate on port 21 and, by default, does not use encryption.
