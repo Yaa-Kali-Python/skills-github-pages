@@ -54,9 +54,12 @@ for key, value in data.items():
     # r.set ‘stores/saves’ them in Redis!!
     r.set(key, value)
 
-(( so what it’s doing is: 
+((so what it’s doing is: 
+
 r.set("username", "yakov")
+
 r.set("role", "admin")
+
 ))
 
 RETRIEVE VALUES FROM Redis:
