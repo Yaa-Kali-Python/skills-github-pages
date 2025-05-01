@@ -31,16 +31,16 @@ The following section about Python interaction with Redis was partially learned 
 
 import redis
 
-#Connect to Redis server (default is localhost:6379)  ## It lets your python script connect to and interact with a Redis database. 
+##Connect to Redis server (default is localhost:6379)  ## It lets your python script connect to and interact with a Redis database.## 
 
 #The line here creates a connection object (r) to a Redis server.  r is the variable. 
 #host=’localhost’   ---- connects to Redis running on your own machine!
 #Redis has a default port number of 6379.
 #db: Redis supports multiple databases (0 – 15 by default). This one is connected to database number 0   
-#so basically now the ‘r’ variable, act like your ‘remote control’ to talk to Redis!
+##so basically now the ‘r’ variable, acts like your ‘remote control’ to talk to Redis!##
 r = redis.Redis(host='localhost', port=6379, db=0)
 
-#Create a Python dictionary
+##Create a Python dictionary##
 #with ‘data’ as the variable we are adding to the dictionary! We are adding two ‘key-value’ pairs:
 ##"username" maps to "yakov"
 ##"role" maps to "admin"
@@ -63,7 +63,7 @@ RETRIEVE VALUES FROM Redis:
 #This line asks Redis for the value associated with the key ‘username’. 
 #r.get fetches the value of ‘username’ ---- Redis will return binary data. Bytes.
 #so output should be seen as: b’yakov’
-##if interested in converting it to a normal string: print(r.get(‘username’).decode()) #output: yakov
+##if interested in converting it to a normal string: print(r.get(‘username’).decode()) #output: yakov##
 print(r.get('username'))  # Output: b'yakov'
 
 Okay now that we’ve taken a closer look at the inner dimension of interacting with ‘redis’ let’s move on and find a method of entry into the redis server. Since the database of redis is stored in RAM and writes the content of the RAM to a hard-disk or SSD, it creates more storage devices to access, increasing our opportunity to infiltrate. If we can’t gain entry to the RAM we can try the hard-disks instead. 
