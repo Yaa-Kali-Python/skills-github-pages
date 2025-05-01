@@ -55,6 +55,7 @@ for key, value in data.items():
     r.set(key, value)
 
 ((so what it’s doing is: 
+
 r.set("username", "yakov")
 r.set("role", "admin")
 ))
