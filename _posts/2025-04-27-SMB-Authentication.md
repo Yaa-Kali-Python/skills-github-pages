@@ -23,7 +23,7 @@ Service: microsoft-ds?
 
 Port 445/tcp is associated with SMB and the service ‘microsoft-ds’ has known weaknesses. 
 
-I ran smbclient, it will try to connect to the remote server/host. It checks if authentication is needed. If required it asks for a password for your ‘local’ username. For someone reason it automatically used my local machines name. It didn’t ask for a username.
+I ran smbclient, it will try to connect to the remote server/host. It checks if authentication is needed. If required it asks for a password for your ‘local’ username. For some reason it automatically used my local machines name. It didn’t ask for a username.
 
 Let’s see what the shares are on the SMB server by using the command:
 
