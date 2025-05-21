@@ -20,8 +20,11 @@ id_rsa.pub – your public key (safe to share)
 Step 2
 Copy the Public Key to the server.
 The command: `ssh-copy-id user@remote_server`
+
     • This command will tell the server your public key and trust it. 
+    
     • The public key is copied to
+    
         ◦  the server’s  ~/.ssh/authorized_keys file
 
 Step 3
