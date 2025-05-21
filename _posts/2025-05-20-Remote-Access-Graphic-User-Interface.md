@@ -10,6 +10,7 @@ Hello everyone and welcome back to another exciting entry in my cybersecurity bl
 Before diving into the exploit, let's breifly explore Remote Access Protocols. Protocols like Telnet (port 23/TCP) and SSH (port 22/TCP) are commonly used for remote access and system management. Telnet while historically popular, is considered insecure today because it transmits data, including credentials, in plaintext. In contrast, Secure Shell (SSH) provides encrypted communication and secure authentication using public-key cryptography, making it the preferred chocie for secure remote sessions. Let’s now take a compendious look at how public-key encryption works and why it's fundamental to secure access protocols like SSH.
 
 A client can create a key pair using:
+
 Step 1 
 `ssh-keygen`
 This will generate:
