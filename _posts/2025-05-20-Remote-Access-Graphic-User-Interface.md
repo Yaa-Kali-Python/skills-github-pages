@@ -22,9 +22,7 @@ Copy the Public Key to the server.
 The command: `ssh-copy-id user@remote_server`
 
     • This command will tell the server your public key and trust it. 
-    
     • The public key is copied to
-    
         ◦  the server’s  ~/.ssh/authorized_keys file
 
 Step 3
@@ -32,26 +30,19 @@ The client will now initiate SSH connection.
 Command: `ssh user@remote_server`
 
     • The ‘server’ will send a challenge. 
-    
     • The Server generates a random ‘encrypted’ challenge using the ‘client’s public key’.
-    
     • Only someone with the matching ‘private key’ can decrypt it. 
-    
         ◦ The client now decrypts it.
-	
         ◦ The SSH client uses the private key to decrypt the challenge. 
-	
         ◦ The decrypted value is sent back. 
-	
             ▪ The Server compares it with what it originally sent. 
-	    
             ▪ If they match the authentication is successful. 
+	    
 Step 4
 Session encryption:
 After authentication, SSH uses a symmetric encryption key (like AES) for the session itself.
 
     • SSH uses Diffie-Hellman (DH) or Elliptic Curve Diffie-Hellman (ECDH) to agree on a shared session key.
-    
     • This key is used for encrypting the data going forward (faster than public-key).
 
 I delved into Public-Key-Encryption to learn about the complexities of SSH security. It appears to be a secure method of remote connection opposed to Telnet. Luckily, this challenge doesn't focus on testing the parameters of SSH, exploiting it would take way more time and skill than I'm ready to spend at the moment. 
