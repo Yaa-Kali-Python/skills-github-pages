@@ -1,4 +1,3 @@
-
 ---
 layout: post
 tite: "How I Accessed a Remote Host GUI"
