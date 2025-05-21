@@ -63,13 +63,13 @@ If it has to be installed:
 First I tried to form an RDP session by not providing any additional info. The script will automatically use your own username as the login username for the RDP session. 
 `/v:{target_IP}` Specifies the target IP of the host we would like to connect to.
 
-After running the command it does not except my username. The next step would be to attempt a login as the Administrator. We can change the script xfreerdp to bypass requirements for a security certificate. Normally the script would ask for them. To change the script a few commands are needed:
+After running the command it does not accept my username. The next step would be to attempt a login as the Administrator. We can change the script xfreerdp to bypass requirements for a security certificate. Normally the script would ask for them. To change the script a few commands are needed:
 
 `/cert:ignore` 		-- This is the code that will tell the script to ignore the security certificate. 
 	
 `/u:Administrator`	-- This will change the login username to ‘Administrator.’
 
-`/v:{target_IP}`		-- Target IP of the host we want to connect to. 
+`/v:{target_IP}`	-- Target IP of the host we want to connect to. 
 
 All together the command should look like:
 
@@ -77,6 +77,6 @@ All together the command should look like:
 
 The output I received was server. I pressed enter, and it prompted for a password. Pressing enter again, logged me in and the remote desktop GUI was activated. The remote hosts display becamev visible, and the flag was located directly on the desktop. This login behavior, gaining access without credentials, is a clear misconfiguration. 
 
-This exercise reinforced the critical importance of proper credential management in system security. A simple misconfiguration granted unauthorized access to a remote system. The time spent researching open ports proved valuable. Port 3389/TCP which supports Windows Remote Desktop Protocol (RDP), was the primary gateway. Additionally exploring the rolesand potential vulnerabilities of other open ports (139, 445, and 5357) offered useful insight. Even though they weren't necessary for this specific challenge, they may prove beneficial in future scenarios. 
+This exercise reinforced the critical importance of proper credential management in system security. A simple misconfiguration granted unauthorized access to a remote system. The time spent researching open ports proved valuable. Port 3389/TCP which supports Windows Remote Desktop Protocol (RDP), was the primary gateway. Additionally exploring the roles and potential vulnerabilities of other open ports (139, 445, and 5357) offered useful insight. Even though they weren't necessary for this specific challenge, they may prove beneficial in future scenarios. 
 
 Thanks for reading, and until next time stay curious and stay secure.    
