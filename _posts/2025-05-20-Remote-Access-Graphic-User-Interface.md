@@ -51,7 +51,7 @@ The reason we aren't focued on SSH or Telnet is becuase the goal is to use a uni
 
 Two of the most prevalent Remote Desktop Tools are Teamviewer and Windows Remote Desktop Connection, once known as Terminal Services Client.
 
-Okay let’s being the Enumeration:
+Okay let’s begin the Enumeration:
 I started with a ping. It worked then I moved to the next step. An nmap scan.
 `Sudo nmap -sV {target_IP}` The scan returns 5 open ports. From using the -sV tag we can see the versions and services running on each open port. Examining them may reveal potential vulnerabilities due to outdated software.
 
